@@ -1,0 +1,56 @@
+{
+  "name": "movie",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-corekit/sleep": "^1.1.0",
+    "axios": "^0.26.0",
+    "bootstrap": "4.6.0",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
+    "js-cookie": "^3.0.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "1.6.1",
+    "react-dom": "^17.0.1",
+    "react-minimal-pie-chart": "^8.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "react-star-ratings": "^2.3.0",
+    "react-wordcloud": "^1.2.7",
+    "recharts": "^2.1.9",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:window": "set \"REACT_APP_DEPLOY_TYPE=development\" &&  react-scripts start",
+    "start:window-prod": "set \"REACT_APP_DEPLOY_TYPE=production\" npm run start",
+    "start:dev": "REACT_APP_DEPLOY_TYPE=development npm run start",
+    "start:prod": "REACT_APP_DEPLOY_TYPE=production npm run start",
+    "build": "react-scripts build",
+    "build:window": "set \"REACT_APP_DEPLOY_TYPE=development\" && npm run build",
+    "build:window-prod": "set \"REACT_APP_DEPLOY_TYPE=production\" npm run build",
+    "build:dev": "REACT_APP_DEPLOY_TYPE=development npm run build",
+    "build:prod": "REACT_APP_DEPLOY_TYPE=production npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8000/"
+}
